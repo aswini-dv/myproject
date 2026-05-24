@@ -1,0 +1,13 @@
+name: Demo Pipeline 1
+
+on:
+  push:
+    branches:["main"]
+
+    jobs;
+      demo1:
+         runs-on:[Self-hosted,wsl1]
+
+         steps:
+           - name: Print a varibale
+             run:echo-"First successfull pipeline"
